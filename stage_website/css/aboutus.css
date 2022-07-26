@@ -1,0 +1,137 @@
+/*===========================
+    22.Services Details css 
+===========================*/
+.services-details {
+  padding-top: 1px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services-details {
+      padding-top: 5px; } }
+  @media (max-width: 767px) {
+    .services-details {
+      padding-top: 3px; } }
+
+.single-services-details {
+  position: relative;
+  z-index: 5;
+  padding-left: 70px;
+  padding-bottom: 70px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-services-details {
+      padding-left: 40px;
+      padding-bottom: 40px; } }
+  
+    
+  .single-services-details .services-image a {
+    display: block; }
+  .single-services-details .services-image img {
+    width: 100%;
+    border-radius: 3px; }
+
+.services-details-content .services-name {
+  font-weight: 700;
+  font-size: 46px;
+  color: #07294D;
+  position: relative;
+  padding-bottom: 10px; }
+  @media (max-width: 767px) {
+    .services-details-content .services-name {
+      font-size: 28px; } }
+  
+    @media (max-width: 767px) {
+      .services-details-content .services-name::before {
+        width: 100px; } }
+.services-details-content .designation {
+  font-weight: 600;
+  font-size: 24px;
+  color: #07294D;
+  margin-top: 14px; }
+  @media (max-width: 767px) {
+    .services-details-content .designation {
+      font-size: 18px; } }
+.services-details-content .department {
+  font-weight: 500;
+  font-size: 18px;
+  color: #151515; }
+  @media (max-width: 767px) {
+    .services-details-content .department {
+      font-size: 14px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .services-details-content .department {
+      text-align: justify;
+      font-size: 16px; } }
+.services-details-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #303030;
+  margin-top:5px; 
+  text-align:justify;
+  }
+  .services-details-content ul {
+  list-style-type: square;
+}
+ul li {color:black;}
+  @media (max-width: 767px) {
+    .services-details-content p {
+      font-size: 14px;
+      line-height: 24px; } }
+.services-details-content .services-contact {
+  padding-top: 0px; }
+  .services-details-content .services-contact li {
+    font-weight: 500;
+    font-size: 18px;
+    color: #303030;
+    margin-top: 0px; }
+    @media (max-width: 767px) {
+      .services-details-content .services-contact li {
+        font-size: 14px; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .services-details-content .services-contact li {
+        font-size: 16px; } }
+    .services-details-content .services-contact li a {
+      color: #303030; }
+
+
+/*===========================
+    16.Page Banner css 
+===========================*/
+.page-banner {
+  padding-top: 0px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner {
+      padding-top: 0px; } }
+  @media (max-width: 767px) {
+    .page-banner {
+      padding-top: 0px; } }
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .page-banner {
+      padding-top: 0px; } }
+
+.banner-content {
+  padding-top: 10px;
+  padding-bottom: 140px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .banner-content {
+      padding-top: 9px;
+      padding-bottom: 90px; } }
+  @media (max-width: 767px) {
+    .banner-content {
+      padding-top: 75px;
+      padding-bottom: 75px; } }
+  .banner-content .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 76px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .banner-content .title {
+        font-size: 50px; } }
+    @media (max-width: 767px) {
+      .banner-content .title {
+        font-size: 32px; } }
+
+        .bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; }

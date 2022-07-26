@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.7
+- https://www.phpmyadmin.net
+-
+- Host: localhost:3306
+- Generation Time: Dec 02, 2021 at 12:22 PM
+- Server version: 10.2.40-MariaDB-cll-lve
+- PHP Version: 7.3.32
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="orena_demo_moodle" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="expert">
+                CREATE TABLE `expert` (
+                  `id` int(255) NOT NULL AUTO_INCREMENT,
+                  `Expert_Name` varchar(255) NOT NULL,
+                  `Personal_Email` varchar(255) NOT NULL,
+                  `Work Email` varchar(50) NOT NULL,
+                  `Contect Number` varchar(50) NOT NULL,
+                  `Whatsapp Number` varchar(255) NOT NULL,
+                  `Address` varchar(255) NOT NULL,
+                  `Country` varchar(255) NOT NULL,
+                  `State` varchar(255) NOT NULL,
+                  `City` varchar(255) NOT NULL,
+                  `Compant/Institute Name` varchar(225) NOT NULL,
+                  `Domain of Expertise` varchar(225) NOT NULL,
+                  `Technical Skills(Technology)` varchar(225) NOT NULL,
+                  `Technical Skills(Operating System)` varchar(225) NOT NULL,
+                  `Technical Skills(Tools)` varchar(200) NOT NULL,
+                  `Technical Skills(Hardware)` varchar(500) NOT NULL,
+                  `Non-Technical Skills` varchar(500) NOT NULL,
+                  `Mention other Non-Technical skills` varchar(600) NOT NULL,
+                  `Expert Association As` varchar(500) NOT NULL,
+                  `Mode` varchar(600) NOT NULL,
+                  `Days` varchar(50) NOT NULL,
+                  `Start Time` varchar(50) NOT NULL,
+                  `End Time` varchar(50) NOT NULL,
+                  `Expected Fees Per Hour` varchar(50) NOT NULL,
+                  `Upload Consent Latter` varchar(500) NOT NULL,
+                  `Upload Photo` varchar(300) NOT NULL,
+                  `Upload Profile Summary` varchar(300) NOT NULL,
+                  `Name/Account Holder Name(To Be Printed On Cheque)` varchar(500) NOT NULL,
+                  `Bank Name` varchar(600) NOT NULL,
+                  `Account Name` varchar(400) NOT NULL,
+                  `IFSC Code` varchar(50) NOT NULL,
+                  `Display Data ON Website` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'orena_demo_moodle'
+    -->
+    <database name="orena_demo_moodle">
+        <!-- Table expert -->
+        <table name="expert">
+            <column name="id">1</column>
+            <column name="Expert_Name">NISHA</column>
+            <column name="Personal_Email">nisha@gmail.com</column>
+            <column name="Work Email">nisha@gmail.com</column>
+            <column name="Contect Number">6354527548</column>
+            <column name="Whatsapp Number">6354527548</column>
+            <column name="Address"></column>
+            <column name="Country"></column>
+            <column name="State"></column>
+            <column name="City"></column>
+            <column name="Compant/Institute Name"></column>
+            <column name="Domain of Expertise">niii , </column>
+            <column name="Technical Skills(Technology)">nnn , </column>
+            <column name="Technical Skills(Operating System)">nnn , </column>
+            <column name="Technical Skills(Tools)">nnn , </column>
+            <column name="Technical Skills(Hardware)">gwgdywgdyw , </column>
+            <column name="Non-Technical Skills"></column>
+            <column name="Mention other Non-Technical skills"></column>
+            <column name="Expert Association As">Tnterviewer</column>
+            <column name="Mode"></column>
+            <column name="Days">MondayAND </column>
+            <column name="Start Time">AND </column>
+            <column name="End Time">AND </column>
+            <column name="Expected Fees Per Hour">hfrehwf</column>
+            <column name="Upload Consent Latter">Consent Letter/wp3979191.jpg</column>
+            <column name="Upload Photo">Expert Photo/</column>
+            <column name="Upload Profile Summary">Profile Summary/ferrari.jpg</column>
+            <column name="Name/Account Holder Name(To Be Printed On Cheque)"></column>
+            <column name="Bank Name"></column>
+            <column name="Account Name"></column>
+            <column name="IFSC Code"></column>
+            <column name="Display Data ON Website"></column>
+        </table>
+        <table name="expert">
+            <column name="id">2</column>
+            <column name="Expert_Name"></column>
+            <column name="Personal_Email"></column>
+            <column name="Work Email"></column>
+            <column name="Contect Number"></column>
+            <column name="Whatsapp Number"></column>
+            <column name="Address"></column>
+            <column name="Country"></column>
+            <column name="State"></column>
+            <column name="City"></column>
+            <column name="Compant/Institute Name"></column>
+            <column name="Domain of Expertise"></column>
+            <column name="Technical Skills(Technology)"></column>
+            <column name="Technical Skills(Operating System)"></column>
+            <column name="Technical Skills(Tools)"></column>
+            <column name="Technical Skills(Hardware)"></column>
+            <column name="Non-Technical Skills"></column>
+            <column name="Mention other Non-Technical skills"></column>
+            <column name="Expert Association As"></column>
+            <column name="Mode"></column>
+            <column name="Days"></column>
+            <column name="Start Time"></column>
+            <column name="End Time"></column>
+            <column name="Expected Fees Per Hour"></column>
+            <column name="Upload Consent Latter">Consent Letter/</column>
+            <column name="Upload Photo">Expert Photo/</column>
+            <column name="Upload Profile Summary">Profile Summary/</column>
+            <column name="Name/Account Holder Name(To Be Printed On Cheque)"></column>
+            <column name="Bank Name"></column>
+            <column name="Account Name"></column>
+            <column name="IFSC Code"></column>
+            <column name="Display Data ON Website"></column>
+        </table>
+    </database>
+</pma_xml_export>

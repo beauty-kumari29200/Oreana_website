@@ -1,0 +1,8 @@
+numpy
+textblob
+nltk
+torch
+random
+json
+model
+flask

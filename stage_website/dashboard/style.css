@@ -1,0 +1,436 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Domain Carousal */
+
+.domain-img {
+    padding: 0px 0px;
+}
+
+.domain-box {
+    margin: 2% 4%;
+    padding-top: 4%;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    text-align: center;
+    color: white;
+}
+
+.domain1 {
+    background-color: rgb(56, 131, 216);
+}
+
+.blue {
+    background-color: rgb(56, 131, 216);
+    border: 2px solid white;
+    color: white;
+    width: 5.5rem;
+    border-radius: 50px;
+}
+
+.blue:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(56, 131, 216);
+}
+
+.domain2 {
+    background-color: rgb(233, 121, 56);
+}
+
+.orange {
+    background-color: rgb(233, 121, 56);
+    border: 2px solid white;
+    color: white;
+    width: 5.5rem;
+    border-radius: 50px;
+}
+
+
+.domain3 {
+    background-color: rgb(245, 52, 117);
+}
+
+
+.pink {
+    background-color: rgb(245, 52, 117);
+    border: 2px solid white;
+    color: white;
+    width: 5.5rem;
+    border-radius: 50px;
+}
+
+.domain4 {
+    background-color: rgb(62, 177, 17);
+}
+
+
+.green {
+    background-color: rgb(62, 177, 17);
+    border: 2px solid white;
+    color: white;
+    width: 5.5rem;
+    border-radius: 50px;
+}
+
+.domain5 {
+    background-color: rgb(231, 228, 42);
+}
+
+
+.yellow {
+    background-color: rgb(231, 228, 42);
+    border: 2px solid white;
+    color: white;
+    width: 5.5rem;
+    border-radius: 50px;
+}
+
+/* Counter section */
+
+.counter {
+    text-align: center;
+    background-color: #efefef;
+}
+
+.counter h2 {
+    padding-top: 4%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.counter-box {
+    border: 15px solid #efefef;
+    height: 200px;
+    width: 225px;
+}
+
+.count {
+    font-size: 2rem;
+    line-height: 100px;
+    color: black;
+    /* margin-left:30px; */
+}
+
+.b {
+    color: rgb(56, 131, 216);
+}
+
+.o {
+    color: rgb(233, 121, 56);
+}
+
+.pi {
+    color: rgb(245, 52, 117);
+}
+
+.g {
+    color: rgb(62, 177, 17);
+}
+
+.y {
+    color: rgb(231, 228, 42);
+}
+
+
+/* Introduction Section */
+
+.introduction {
+    padding: 4% 7%;
+    background-color: #D3E4CD;
+}
+
+.introduction button {
+    margin-top: 5px;
+    background-color: rgb(62, 177, 17);
+    border: 2px solid white;
+    color: white;
+    width: 5.5rem;
+    border-radius: 50px;
+}
+
+.introduction h3 {
+    margin-bottom: 20px;
+}
+
+.img2 {
+    display: none;
+}
+
+.inner-box {
+    padding: 8% 10%;
+    width: 45vw;
+    height: 330px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(62, 177, 17);
+    color: white;
+    text-align: center;
+    top: 40px;
+    left: -20px;
+    line-height: 1.5;
+    box-shadow: 0 10px 5px #5e5e5e7e;
+}
+
+.introduction button:hover {
+    color: rgb(62, 177, 17);
+    background-color: white;
+}
+
+.img-box {
+    text-align: right;
+}
+
+.outer-box {
+    position: relative;
+
+}
+
+@media (max-width:990px) {
+
+    .introduction {
+        padding: 0 0;
+    }
+
+    .outer-box {
+        position: static;
+    }
+
+    .inner-box {
+        position: static;
+        width: auto;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+
+        display: inline;
+    }
+}
+
+/* Services section */
+
+#feature {
+    text-align: center;
+    /* background-color: #efefef; */
+}
+
+/* #feature .container-fluid{
+    background-color: #efefef;
+} */
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+    /* background-color: #efefef; */
+}
+
+#feature button{
+    height: 2.5rem;
+}
+
+.feature-box h4 {
+    font-weight: bolder;
+}
+
+.feature-box p {
+    color: #8f8f8f;
+}
+
+.icon {
+    color: rgb(56, 131, 216);
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #8f8f8f;
+    cursor: pointer;
+}
+
+/* Courses section */
+
+.course{
+    padding: 4% 1%;
+    text-align: center;
+    background-color: #D3E4CD;
+}
+
+.course-box:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.course-inner-box{
+    background-color: #D3E4CD;
+}
+
+.course button{
+    margin-top: 5px;
+    background-color: white;
+    border: 2px solid white;
+    color: rgb(0, 0, 0);
+    width: 9rem;
+    border-radius: 50px;
+    height: 2.5rem;
+}
+
+
+.course button:hover{
+    border: 2px solid #D3E4CD;
+    background-color: #D3E4CD;
+    color: white;
+}
+
+.btn-group{
+    text-align: center;
+    
+}
+
+/* client section */
+
+.client{
+    text-align: center;
+    margin: 5% 1%;
+}
+
+.client .row{
+     padding: 5% 10%;
+}
+
+.client-box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/baroda-polyform.png');
+}
+.client-box2{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/bits.png');
+}
+
+.client-box3{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/relcon.png');
+}
+.client-box4{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-image: url('images/Our clients/remax.png');
+}
+
+.client-box5{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/rpd.png');
+}
+.client-box6{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/rpd2.png');
+}
+
+.client-box7{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/rpd3.png');
+}
+.client-box8{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-image: url('images/Our clients/surya-international.png');
+}
+
+.client-box9{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/trinity-info-serve1.png');
+}
+.client-box10{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/University-Alliance-Logo.png');
+}
+
+.client-box11{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url('images/Our clients/relcon.png');
+}
+.client-box12{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-image: url('images/Our clients/remax.png');
+}

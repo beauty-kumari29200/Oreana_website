@@ -1,0 +1,683 @@
+ <!doctype html>
+<html lang="zxx">
+<?php include "navbar.php" ?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Orena</title>
+    <link rel="shortcut icon" type="image/x-icon" href="asset/img/favicon.ico">
+
+    <!-- css include -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/fontawesome.css">
+    <link rel="stylesheet" href="asset/css/themify-icons.css">
+    <link rel="stylesheet" href="asset/css/animate.min.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/css/magnific-popup.css">
+    <link rel="stylesheet" href="asset/css/metisMenu.css">
+    <link rel="stylesheet" href="asset/css/nice-select.css">
+    <link rel="stylesheet" href="asset/css/jquery-ui.css">
+    <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+ 
+</head>
+
+<body>
+   
+        <main>
+             <!--page title start -->
+            <section class="page_title_area" data-overlay="6" data-background="asset/img/bg/page_title_bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-l2">
+                            <div class="page_title text-center">
+                                <h2>Apply for Internship</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page title end -->
+            
+            <?php
+               error_reporting(E_ALL ^ E_NOTICE);  
+               $email=$_GET['email'];
+               
+
+               include 'connection_moodle.php';
+
+               if ($email !== "") {
+                   
+                   // Get corresponding workemail and
+                   // expertname for that personalemail	
+                   $query = mysqli_query($mysqli, "SELECT collegename,
+                   fname, gender, contactnumber, tponame, tpoemail, percent1, percent2, g_degree, g_branch, g_cgpa, g_year, m_degree, m_branch, m_cgpa, m_year, 
+                 project_title, project_technology, domain, skills, p_location, city, st_ate, re_sume FROM registrationform WHERE email='$email'");
+               
+                   $row = mysqli_fetch_array($query);
+               
+                 $collegename = $row["collegename"];
+                 $fname = $row["fname"];
+                 $gender = $row["gender"];
+                 $contactnumber = $row["contactnumber"];
+                 $tponame = $row["tponame"];  
+                 $tpoemail= $row["tpoemail"];
+                 $percent1 = $row["percent1"];
+                 $percent2 = $row["percent2"];
+                 $g_degree = $row["g_degree"];
+                 $g_branch = $row["g_branch"];
+                 $g_cgpa = $row["g_cgpa"];
+                 $g_year = $row["g_year"];
+                 $m_degree = $row["m_degree"];
+                 $m_branch = $row["m_branch"];
+                 $m_cgpa = $row["m_cgpa"];
+                 $m_year = $row["m_year"];
+                 $project_title = $row["project_title"];
+                 $project_technology = $row["project_technology"];
+                 $domain = $row["domain"];
+                 $skills = $row["skills"];
+                 $p_location = $row["p_location"];
+                 $city = $row["city"];
+                 $st_ate = $row["st_ate"];
+                 $re_sume = $row["re_sume"];
+               
+               
+               
+               }
+
+               ?>
+
+            <!-- form start -->
+            <section class="checkout_area pt-120 pb-120" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="checkout_wrap">
+                                <div class="radio_wrap">
+                                    <h3></h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12">
+                                        <form class="form_wrap" method="POST" action="interns_view.php" enctype="multipart/form-data">
+                                              <div class="row">     
+                                                <div>
+                                                   <h4>Personal</h4>
+                                                    <hr style="height:4px;background: black;">
+                                                </div>
+                                               <div class="row">
+                                                 <div class="col-xl-12 col-lg-12">
+                                                    <label for="email">Email <span style="color:red;"><b>*</b></span></label>
+                                                    <input type="email" id="email" name="email" placeholder="Email" value="<?php echo $email; ?>" onchange="myFunction()" required>
+                                                    </div>
+                                                </div>
+                                                
+                                                 
+
+                                                
+                                               
+   
+
+                                                <div class="col-xl-12 col-lg-12" >
+                                                    <label for="cname">College/Institute Name<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="collegename" name="collegename" placeholder="College/Institute Name" value="<?php echo $collegename; ?>" required>
+                                                </div>
+                                                
+                                                <!--div class="col-xl-12 col-lg-12" name="batch" id="batch">
+                                                    
+                                                       <label for="batch">Batch<span>*</span></label>
+                                                       
+                                                       
+                                                       <div class="filter">
+                                                        <select name="batch" id="batch" required>
+                                                               <option value="10AM TO 12:30PM">10AM TO 12:30PM</option>
+                                                                <option value="3PM TO 5:30PM">3PM TO 5:30PM</option>
+                                                        </select>
+                                                        
+                                                        
+                                                      </div>
+                                                  
+                                                  
+                                                </div>
+                                               
+                                                
+                                                <div class="col-xl-12 col-lg-12" name="Training" id="Training">
+                                                    
+                                                       <label for="Training">Training<span>*</span></label>
+                                                       
+                                                       
+                                                       <div class="filter">
+                                                        <select name="Training" id="Training" required>
+                                                        
+                                                                <option value="Offline">Offline</option>
+                                                        </select>
+                                                        
+                                                        
+                                                      </div>
+                                                  
+                                                  
+                                                </div-->
+                                               
+                                                <div class="col-xl-12 col-lg-12">
+                                                    <label for="fname">Full Name<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="fname" name="fname" value="<?php echo $fname; ?>" placeholder="Full Name" title="Alphabets only" pattern="[A-Za-z- -]+" value="" required>
+                                                </div>
+                                               
+                                                <!--<div class="form-row">-->
+                                                 <div class="col-xl-6 col-lg-6">
+                                                    <label for="gender">Gender<span style="color:red;"><b>*</b></span></label>
+                                                    <div class="filter">
+                                                         <select name="gender" id="gender" required>
+                                                         <!--<option value="">Select</option>    -->
+                                                            
+                                                            
+                                                            <?php 
+                                                            if($gender=='Male')
+                                                            { ?>                         
+                                                            <option value="<?php echo $gender; ?>"><?php echo $gender; ?></option>
+                                                             <option  value="Female" style="color:black;" >Female</option>
+                                                             <option  value="Others" style="color:black;">Others</option>
+                                                              
+                                                             <?php }else if($gender=='Female'){ ?>
+                                                                <option value="<?php echo $gender; ?>"><?php echo $gender; ?></option>
+                                                             <option  value="Male" style="color:black;">Male</option> 
+                                                             <option  value="Others" style="color:black;" >Others</option>
+
+                                                             <?php } else{ ?>
+                                                             <option value="">Select</option>
+                                                              <option  value="Male" style="color:black;">Male</option>
+                                                              <option  value="Female" style="color:black;" >Female</option>
+                                                             <option  value="Others" style="color:black;">Others</option><?php } ?>
+                                                         </select>
+                                                    </div>
+                                                </div> 
+
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="email">Mobile Number<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="tel" id="contactnumber" name="contactnumber" value="<?php echo $contactnumber; ?>" placeholder="Mobile Number" pattern="[0-9]{10}" value="" title="10 Numerical values only"  required>
+                                                </div>
+                                              
+        
+
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="cname">Training and Placement Officer Name (TPO) <span></span></label>
+                                                    <input type="text" id="tponame" name="tponame" value="<?php echo $tponame; ?>" placeholder="TPO's Name">
+                                                </div>
+
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="email">Training and Placement Officer's Email Address<span></span></label>
+                                                    <input type="email" id="tpoemail" name="tpoemail" placeholder="TPO's Email" value="<?php echo $tpoemail; ?>">
+                                                </div>
+                                                
+                                 <!--school-->
+                                                 <div>
+                                                    <h4>School</h4> 
+                                                    <hr style="height:4px;background: black;">
+                                                </div>
+                                                
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="10thresult">10th Percentage<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="percent1" name="percent1" placeholder="10th Class Percentage" value="<?php echo $percent1; ?>" required>
+                                                </div>
+
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="diploma_rresult">12th/Diploma Percentage<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="percent2" name="percent2" placeholder="12th/Diploma Percentage" value="<?php echo $percent2; ?>" required>
+                                                </div>
+
+                                <!--College-->
+                                                 <div>
+                                                   <h4>College</h4>
+                                                    <hr style="height:4px;background: black;">
+                                                </div>
+                                                
+                                                
+                                                        <!--div class="col-xl-3 col-lg-4" name="hidden-panel1" id="hidden-panel1">
+                                                         
+                                                               <label for="Graduation">Graduation Degree Courses<span>*</span></label>
+                                                                 
+                                                               <div class="filter">
+                                                                <select name="select_graduation" id="select_graduation" required>
+                                                                       <option value="EC">EC</option>
+                                                                        <option value="IT">IT</option>
+                                                                         <option value="EE">EE</option>
+                                                                          <option value="IC">IC</option>
+                                                                        <option value="CE">CE</option>  
+                                                                </select>
+                                                                
+                                                              </div>
+                                                          
+                                                        </div>
+                                                        
+                                                        <div class="col-xl-3 col-lg-4" name="hidden-panel3" id="hidden-panel3">
+                                                         
+                                                               <label for="Graduation">Graduation Degree Courses<span>*</span></label>
+                                                                 
+                                                               <div class="filter">
+                                                                <select name="select_graduation" id="select_graduation" required>
+                                                                       <option value="Electrical">Electrical</option>
+                                                                        <option value="Electronics">Electronics</option>
+                                                                         <option value="IC">IC</option>
+                                                                </select>
+                                                                
+                                                              </div>
+                                                          
+                                                        </div-->
+                                                        
+                                                        
+                                                        
+                                                  
+                                                    
+                                                        <div class="col-xl-6 col-lg-6">
+                                                            <label for="select_graduation">Current Degree(e.g. B.Tech,B.E,...)<span style="color:red;"><b>*</b></span></label>
+                                                            <input type="text" id="g_degree" name="g_degree" placeholder="Current Degree" value="<?php echo $g_degree; ?>" required>
+                                                        </div>   
+
+                                                        <div class="col-xl-6 col-lg-6">
+                                                    <label for="graduation_branch">Current Branch(e.g. IT, CE, EC, MECH,...)<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="g_branch" name="g_branch" placeholder="Current Branch" value="<?php echo $g_branch; ?>" required>
+                                                         </div>
+                                                    
+
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="Graduation_CGPA">Current CGPA/Percentage<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="g_cgpa" name="g_cgpa" placeholder="Current CGPA/Percentage" value="<?php echo $g_cgpa; ?>" required>
+                                                </div>
+                                                
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="year_of_graduation">Current Semester<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="g_year" name="g_year" placeholder="Current Semester" value="<?php echo $g_year; ?>" required>
+                                                </div>
+                                                
+                                 
+                                                
+                                                
+                             <!--project     -->
+                                                <div>
+                                                    <h4>Project with description(if any)</h4> 
+                                                    <hr style="height:4px;background: black;">
+                                                </div>
+                                              
+                                                 
+                                                 
+                                                 <div>
+                                                    <textarea style="height:25px;" id="project" name="project" rows="50" cols="1"></textarea>
+                                                </div>
+                                                
+                                                 
+                                                
+                                                <div>
+                                                <h4>Other details</h4> 
+                                                    <hr style="height:4px;background: black;">
+                                                </div>
+                                                
+
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="country">Area of interest<span style="color:red;"><b>*</b></span></label>
+                                                     <input type="text" id="domain" name="domain" placeholder="Area of interest" value="<?php echo $domain; ?>" required>
+                                                </div>
+                                                
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="Skills">Skills<span style="color:red;"><b>*</b></span></label>
+                                                     <input type="text" id="skills" name="skills" placeholder="Skills" value="<?php echo $skills; ?>" required>
+                                                </div>
+                                                
+                                                
+                                                
+                                                
+                                                <!--div class="col-xl-6 col-lg-6">
+                                                    <label for="current_location">Current Location<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="current_location" name="current_location" placeholder="Current location" required>
+                                                </div-->
+                                                
+                                                
+                                           
+                                            
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="city">Current Town/City<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="city" name="city" placeholder="Town/City" value="<?php echo $city; ?>" required>
+                                                </div>
+                                           
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="State">State<span style="color:red;"><b>*</b></span></label>
+                                                    <input type="text" id="st_ate" name="st_ate" value="<?php echo $st_ate; ?>" placeholder="State" required>
+                                                </div>
+                                                    
+                                                    
+                                                 
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <label for="fileToUpload">Upload Resume(Name of the document should be of your name)<span style="color:red;"><b>*</b></span></label>   
+                                                    <input type="file" id="fileToUpload" class="ct" name="fileToUpload" accept="application/pdf,application/vnd.ms-excel" required>
+                                                </div>
+                                                
+
+                                                    <div class="col-xl-6 col-lg-6">
+                                                    <label for="placement">Interested in Placement<span style="color:red;"><b>*</b></span> &nbsp &nbsp           <span style="font-size:12px;">(<a href="https://stage.orena.solutions/terms&conditions.txt"> <span style="color:blue;"><u>Read this</u></span></a> before selecting YES/NO)</span></label><br>   <br>
+                                                     <div><input type=radio style="height:1em; width:1em;" id="yes" name="X" value="H" onclick="hide();"/> <label for="yes" style="margin-top:-1rem;">      YES</label>
+                                                    <br>    <input type=radio  style="height:1em; width:1em;" id="no" name="X" value="L"  onclick="show();"/> <label for="yes" style="margin-top:-1rem;">      NO</label>
+                                                        <textarea id="area" style="display:none"; placeholder="Justify your answer" name="area" rows=10 cols=50 required></textarea></div>
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="col-xl-6 col-lg-6">
+                                                    <label for="mode_of_internship">Mode of Internship<span style="color:red;"><b>*</b></span></label>
+                                                    <div class="filter">
+                                                         <select name="mode_of_internship" id="mode_of_internship" required>
+                                                         <!--<option value="">Select</option>    -->
+                                                            
+                                                            
+                                                            <?php 
+                                                            if($mode_of_internship=='Offline')
+                                                            { ?>                         
+                                                            <option value="<?php echo $mode_of_internship; ?>"><?php echo $mode_of_internship; ?></option>
+                                                             <option  value="Online" style="color:black;" >Online</option>
+                                                             <option  value="Any" style="color:black;">Any</option>
+                                                              
+                                                             <?php }else if($mode_of_internship=='Online'){ ?>
+                                                                <option value="<?php echo $mode_of_internship; ?>"><?php echo $mode_of_internship; ?></option>
+                                                             <option  value="Offline" style="color:black;">Offline</option> 
+                                                             <option  value="Any" style="color:black;" >Any</option>
+
+                                                             <?php } else{ ?>
+                                                             <option value="">Select</option>
+                                                              <option  value="Offline" style="color:black;">Offline</option>
+                                                              <option  value="Online" style="color:black;" >Online</option>
+                                                             <option  value="Any" style="color:black;">Any</option><?php } ?>
+                                                         </select>
+                                                    </div>
+                                                </div> 
+                                                
+                                                
+                                                  <div class="col-xl-6 col-lg-6">
+                                                    <label for="type_of_internship">Type of Internship<span style="color:red;"><b>*</b></span></label>
+                                                    <div class="filter">
+                                                         <select name="type_of_internship" id="type_of_internship" required>
+                                                         <!--<option value="">Select</option>    -->
+                                                            
+                                                            
+                                                            <?php 
+                                                            if($type_of_internship=='Full-Time')
+                                                            { ?>                         
+                                                            <option value="<?php echo $type_of_internship; ?>"><?php echo $type_of_internship; ?></option>
+                                                             <option  value="Part-Time" style="color:black;" >Part-Time</option>
+                                                             
+                                                              
+                                                             <?php }else if($type_of_internship=='Part-Time'){ ?>
+                                                                <option value="<?php echo $type_of_internship; ?>"><?php echo $type_of_internship; ?></option>
+                                                             <option  value="Offline" style="color:black;">Full-Time</option> 
+                                                             
+                                                             <?php } else{ ?>
+                                                             <option value="">Select</option>
+                                                              <option  value="Full-Time" style="color:black;">Full-Time</option>
+                                                              <option  value="Part-Time" style="color:black;" >Part-Time</option>
+                                                             <?php } ?>
+                                                         </select>
+                                                    </div>
+                                                </div>
+                                                
+                                                        <div>
+                                                       
+
+                                                    
+                                                     
+                                                
+
+                                            </div>
+                                            
+                  <center>
+<p><input type="checkbox" style="height:1em; width:1em;" required> I accept the Terms and Conditions</p>
+<p><input type="submit"></p>
+</center>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+
+            </section>
+            <!-- form end -->
+            
+           
+        
+         
+                                                
+													
+                                                    
+
+
+        <!-- footer start -->
+<!--        <footer class="footer_area footer_bg footer_space">-->
+<!--            <div class="container">-->
+<!--                <div class="subscribe_wrap">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-lg-7 col-md-6">-->
+<!--                            <div class="sub_text">-->
+<!--                                <h3>Sign up Newsletter</h3>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-5 col-md-6">-->
+<!--                            <form class="sub_from" action="#">-->
+<!--                                <input type="text" placeholder="Enter Your Mail">-->
+<!--                                <button class="thm_btn">Subscribe</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="footer_main">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-lg-4 col-md-6">-->
+<!--                            <div class="footer_widget">-->
+<!--                                <h3>About Us</h3>-->
+<!--                                <div class="about_text">-->
+<!--                                    <p>We the team of Orena Solution are passionate about trying to bridge the gap between the academics and the industry. We are a visionary ICT company, looking to rejuvenate the employability levels of the Indian workforce. Orena Solution comprises of members from fortune 500 companies having vast experience in ICT training, online and offline campuses and executive training through various company as well as Academic campuses</p>-->
+<!--                                </div>-->
+<!--                                <div class="social_icon mt-45">-->
+<!--                                    <a href="https://www.facebook.com/orena.solutions/"><i class="fab fa-facebook-f"></i></a>-->
+<!--                                    <a href="https://www.instagram.com/orena_solutions/"><i class="fab fa-instagram"></i></a>-->
+<!--                                    <a href="https://www.linkedin.com/in/orena-solutions-7561521b4/"><i class="fab fa-linkedin"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-2 col-md-6">-->
+<!--                            <div class="footer_widget footer_link-left">-->
+<!--                                <h3>Categories</h3>-->
+<!--                                <ul class="footer_link">-->
+<!--                                    <li><a href="#">All Courses</a></li>-->
+<!--                                    <li><a href="#">Design Courses</a></li>-->
+<!--                                    <li><a href="#">Branding Design</a></li>-->
+<!--                                    <li><a href="#">Business</a></li>-->
+<!--                                    <li><a href="#">Architecture</a></li>-->
+<!--                                    <li><a href="#">Digital Branding</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-3 col-md-6">-->
+<!--                            <div class="footer_widget footer_link-right">-->
+<!--                                <h3>Support</h3>-->
+<!--                                <ul class="footer_link">-->
+<!--                                    <li><a href="#">Contact Support</a></li>-->
+<!--                                    <li><a href="#">System Requermnet</a></li>-->
+<!--                                    <li><a href="#">Site Feedback</a></li>-->
+<!--                                    <li><a href="#">Register Activation Key</a></li>-->
+<!--                                    <li><a href="#">24/7 Service</a></li>-->
+<!--                                    <li><a href="#">System Requerment</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-3 col-md-6">-->
+<!--                            <div class="footer_widget footer_right_text">-->
+<!--                                <h3>Get In Touch</h3>-->
+<!--                                <ul>-->
+<!--                                    <li>-->
+<!--                                        <p>401, 4th Floor, Urban One Complex, Near Panch-Mukhi Hanuman Temple, Vasna-Bhayli Road, Vadodara, Gujarat, India - 391410.</p>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <p>+91 98243 47721</p>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <p>contactus@orena.solutions</p>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                 <div class="footer_bottom">
+<!--                    <div class="left f-left ul_li">-->
+<!--                        <div class="logo">-->
+<!--                            <a href="index.html"><img src="asset/img/logo/logo_white.png" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <ul class="info ul_li">-->
+<!--                            <li>info@webmail.com</li>-->
+<!--                            <li> 24/7</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                    <div class="right f-right">-->
+<!--                        <a class="thm_btn thm_btn-border" href="account.html">Login<i class="fal fa-key"></i></a>-->
+<!--                        <a class="thm_btn" href="account.html">Sign Up<i class="fal fa-long-arrow-right"></i></a>-->
+<!--                    </div>-->
+<!--                </div> -->
+<!--            </div>-->
+<!--        </footer>-->
+        <!-- footer end -->
+
+<!--    </div>-->
+    <!-- body wrap end -->
+    
+
+   
+   
+    <!-- jquery include -->
+<!--    <script src="asset/js/jquery-3.5.1.min.js"></script>-->
+<!--    <script src="asset/js/bootstrap.bundle.min.js"></script>-->
+<!--    <script src="asset/js/owl.carousel.min.js"></script>-->
+<!--    <script src="asset/js/metisMenu.min.js"></script>-->
+<!--    <script src="asset/js/wow.min.js"></script>-->
+<!--    <script src="asset/js/jquery.nice-select.min.js"></script>-->
+<!--    <script src="asset/js/jquery-ui.js"></script>-->
+<!--    <script src="asset/js/isotope.pkgd.min.js"></script>-->
+<!--    <script src="asset/js/imagesloaded.pkgd.min.js"></script>-->
+<!--    <script src="asset/js/jquery.magnific-popup.min.js"></script>-->
+<!--    <script src="asset/js/main.js"></script>-->
+
+
+    
+    <script>
+
+              // onkeyup event will occur when the user
+              // release the key and calls the function
+              // assigned to this event
+              function GetDetail(str) {
+                if (str.length == 0) {
+                  //document.getElementById("workemail").value = "";
+                  //document.getElementById("expertname").value = "";
+                  document.getElementById("email").value = "";
+                  return;
+                }
+                else {
+          
+                  // Creates a new XMLHttpRequest object
+                  var xmlhttp = new XMLHttpRequest();
+                  xmlhttp.onreadystatechange = function () {
+          
+                    // Defines a function to be called when
+                    // the readyState property changes
+                    if (this.readyState == 4 &&
+                        this.status == 200) {
+                      
+                      // Typical action to be performed
+                      // when the document is ready
+                      var myObj = JSON.parse(this.responseText);
+          
+                      // Returns the response data as a
+                      // string and store this array in
+                      // a variable assign the value
+                      // received to workemail input field
+                      
+                      document.getElementById("collegename").value = myObj[0];
+                      
+                      // Assign the value received to
+                      // expertname input field
+                        document.getElementById("fname").value = myObj[1];
+                        document.getElementById("gender").value = myObj[2];
+                        document.getElementById("contactnumber").value = myObj[3];
+                        document.getElementById("tponame").value = myObj[4];
+                        document.getElementById("tpoemail").value = myObj[5];
+                       // document.getElementById("country").value = myObj[5];
+                        //document.getElementById("st_ate").value = myObj[6];
+                        //document.getElementById("city").value = myObj[7];
+                        document.getElementById("percent1").value = myObj[6];
+                        document.getElementById("percent2").value = myObj[7];
+                        document.getElementById("g_degree").value = myObj[8];
+                        document.getElementById("g_branch").value = myObj[9];
+                        document.getElementById("g_cgpa").value = myObj[10];
+                        document.getElementById("g_year").value = myObj[11];
+                        document.getElementById("m_degree").value = myObj[12];
+                        document.getElementById("m_branch").value = myObj[13];
+                        document.getElementById("m_cgpa").value = myObj[14];
+                        document.getElementById("m_year").value = myObj[15];
+                        document.getElementById("project_title").value = myObj[16];
+                        document.getElementById("project_technology").value = myObj[17];
+                        document.getElementById("domain").value = myObj[18];
+                        document.getElementById("skills").value = myObj[19];
+                        document.getElementById("p_location").value = myObj[20];
+                        document.getElementById("city").value = myObj[21];
+                        document.getElementById("st_ate").value = myObj[22]; 
+                        document.getElementById("fileToUpload").value = myObj[23];   
+                            
+
+
+                    }
+                  };
+          
+                  // xhttp.open("GET", "filename", true);
+                  xmlhttp.open("GET", "internship.php?email=" + str, true);
+                  
+                  // Sends the request to the server
+                  xmlhttp.send();
+                }
+              }
+              
+              
+            </script>
+            
+            <script>
+function myFunction() {
+  var x = document.getElementById("email").value;
+   window.location = 'https://stage.orena.solutions/interns.php?email=' + x;
+  
+}
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+        function show() 
+        { 
+            document.getElementById('area').style.display = 'block'; 
+            
+        }
+        function hide() 
+        { 
+            document.getElementById('area').style.display = 'none'; 
+            
+        }
+      </script>
+            
+ 
+       
+</body>
+<?php include "footer.php" ?>
+</html>

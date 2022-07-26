@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<?php include "navbar.php" ?>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Orena Solution</title>
+</head>
+
+<body>
+
+    <!-- Corousal section for domain -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators" style=" padding-top: 8%;">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-6 domain-img">
+                        <img src="image/domain1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-6 domain1">
+                        <div class="container-fluid domain-box" style="margin-top:13%;">
+                            <h5 style="color:white; font-size:2rem;">Automation</h5>
+                            <p style="color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button style="background-color: rgb(56, 131, 216); border: 2px solid white; color: white; width: 5.5rem; border-radius: 50px;">More</button>
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block"> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6 domain-img">
+                        <img src="image/domain2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-6 domain2">
+                        <div class="container-fluid domain-box"  style="margin-top:13%;">
+                            <h5 style="color:white; font-size:2rem;">E-Commerce</h5>
+                            <p style="color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button style="background-color: rgb(233, 121, 56); border: 2px solid white; color: white; width: 5.5rem; border-radius: 50px;">More</button>
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block"> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6 domain-img">
+                        <img src="image/domain1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-6 domain3">
+                        <div class="container-fluid domain-box"  style="margin-top:13%;">
+                            <h5 style="color:white; font-size:2rem;">Industry 4.0</h5>
+                            <p style="color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button style="background-color: rgb(245, 52, 117); border: 2px solid white; color: white; width: 5.5rem; border-radius: 50px;">More</button>
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block"> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6 domain-img">
+                        <img src="image/domain2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-6 domain4">
+                        <div class="container-fluid domain-box"  style="margin-top:13%;">
+                            <h5 style="color:white; font-size:2rem;">Consumer Durables</h5>
+                            <p style="color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button style="background-color: rgb(62, 177, 17); border: 2px solid white; color: white; width: 5.5rem; border-radius: 50px;">More</button>
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block"> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6 domain-img">
+                        <img src="image/domain1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-6 domain5">
+                        <div class="container-fluid domain-box"  style="margin-top:13%;">
+                            <h5 style="color:white; font-size:2rem;">IT and ITES</h5>
+                            <p style="color:white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button style="background-color: rgb(231, 228, 42); border: 2px solid white; color: white; width: 5.5rem; border-radius: 50px;">More</button>
+                            <!-- </div> -->
+                        </div>
+                        <!-- <div class="carousel-caption d-none d-md-block"> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Domain end -->
+
+    <!-- Counter  -->
+    <section class="counterss" style="background-color: #f7f7f7;">
+    <div class="row" style="padding:5% 5%; margin-left:8%;">
+                <div class="counters" style="margin:0 1%; width: 8rem; font-size:3rem;">
+                    <a class="counter" style="color: #ffa500;">1</a>
+                    <a style="font-size: 20px;">IP Patents</a>
+                </div>
+                <div class="counters" style="margin:0 1%; width: 12rem; font-size:3rem; ">
+                    <a class="counter" style="color: #ff4500;">1500</a><span style="font-size: 50px; color: #ff4500;">+</span>
+                    <a style="font-size: 20px;">Engineers Trained</a>
+                </div>
+                <div class="counters" style="margin:0 1%; width: 9rem; font-size:3rem;">
+                    <a class="counter" style="color: #87ceeb;">98</a><span style="font-size: 50px; color: #87ceeb;">%</span>
+                    <a style="font-size: 20px;">Placement</a>
+                </div>
+                <div class="counters" style="margin:0 1%; width: 14rem; font-size:3rem;">
+                    <a class="counter" style="color: #008000;">20</a>
+                    <a style="font-size: 20px;">Intellectual Properties</a>
+                </div>
+                <div class="counters" style="margin:0 1%; width: 9rem; font-size:3rem;">
+                    <a class="counter" style="color: #808080;">3</a>
+                    <a style="font-size: 20px;">Entrepreneurs</a>
+                </div>
+            </div>
+            </section>
+    <!-- <section class="counterss">
+
+        <h2>Our Achievement</h2>
+        <div class="box">
+            <div class="counterss-box"><span class="count b">1</span>
+                <p style="font-size: 1.05rem;">IP PATENT</p>
+            </div>
+            <div class="counterss-box"><span class="count o">1500</span>
+                <p style="font-size: 1.05rem;">ENGINEERS TRAINED</p>
+            </div>
+            <div class="counterss-box"><span class="count pi">98</span>
+                <p style="font-size: 1.05rem;">PLACEMENT %</p>
+            </div>
+            <div class="counterss-box"><span class="count g">20</span>
+                <p style="font-size: 1.05rem;">INTELLECTUAL PROPERTIES</p>
+            </div>
+            <div class="counterss-box"><span class="count y">3</span>
+                <p style="font-size: 1.05rem;">ENTREPRENEURS</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Counter end -->
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 outer-box">
+                <div class="inner-box" style="background-color:#137449;">
+                    <h3 style="color:white;">Bridge for your Future</h3>
+                    <P style="color:white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni consequatur molestiae, harum,
+                        vel
+                        enim amet rerum repellat sit officia nobis optio hic in corrupti consectetur debitis aut
+                        ducimus
+                        dicta ipsam sequi. Voluptatum, minima est?</P>
+                    <p style="color:white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate earum suscipit ipsa
+                        ratione.</p>
+                    <button class="intro-btn" style="background-color:#137449;">More</button>
+                </div> 
+            </div>
+            <div class="col-lg-8 col-md-6 img-box">
+                <img class="img1" src="image/introduction.jpg" alt="">
+                <img class="img2" src="image/introduction2.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Introduction Ends -->
+
+    <!-- Services section -->
+    <section id="feature">
+
+        <div class="container-fluid" style="padding: 5% 7%; text-align: center;">
+            <h3>Services</h3>
+            <div class="row">
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-school fa-3x"></i>
+                    <h5 style="padding:0 2%;">Campus Recruitment Training</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, nobis?</p>
+                </div>
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-chalkboard-teacher fa-3x"></i>
+                    <h5>Talent Acquisition</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aperiam!</p>
+                </div>
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-handshake fa-3x"></i>
+                    <h5>Expert Exchange</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, libero?</p>
+                </div>
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-chalkboard fa-3x"></i>
+                    <h5>Corporate Workshop</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, alias?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-file-alt fa-3x"></i>
+                    <h5>Ip Patent & Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, cum!</p>
+                </div>
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-desktop fa-3x"></i>
+                    <h5>Setting Up Designing Lab</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quidem.</p>
+                </div>
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-tasks fa-3x"></i>
+                    <h5>Industry Projects</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam?</p>
+                </div>
+                <div class="col-lg-3 feature-box">
+                    <i class="icon fas fa-window-restore fa-3x"></i>
+                    <h5>Research Product Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, quo.</p>
+                </div>
+            </div>
+            <button class="blue">More</button>
+        </div>
+
+    </section>
+
+    <!-- Service End -->
+
+    <!-- Courses section -->
+    <section class="course">
+        <h2>Courses</h2>
+        <div class="album py-5 course-inner-box">
+            <div class="container course-inner-box">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 course-inner-box">
+                    <div class="col course-box course-inner-box">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img" width="220" height="270"
+                                src="image/Certification in GIS.jpg" alt="">
+
+                            <div class="card-body">
+                                <h4>Certification in GIS</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
+                                    quibusdam?</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col course-box">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="270"
+                                src="image/Dataanalysis.jpg" alt="">
+
+                            <div class="card-body">
+                                <h4>Data Analysis</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
+                                    quibusdam?</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col course-box">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="270"
+                                src="image/Digital Electronics.jpg" alt="">
+
+                            <div class="card-body">
+                                <h4>Digital Electronic</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente,
+                                    quibusdam?</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <button>View all courses</button>
+    </section>
+
+    <!-- Courses end -->
+
+    <!-- Clients section -->
+    <section class="client">
+        <h2>Our Clients</h2>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <div class="none" style="display: none;">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col-md-3 client-box1">
+
+                        </div>
+                        <div class="col-md-3 client-box2">
+
+                        </div>
+                        <div class="col-md-3 client-box3">
+
+                        </div>
+                        <div class="col-md-3 client-box4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row">
+                        <div class="col-md-3 client-box5">
+
+                        </div>
+                        <div class="col-md-3 client-box6">
+
+                        </div>
+                        <div class="col-md-3 client-box7">
+
+                        </div>
+                        <div class="col-md-3 client-box8">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 client-box9">
+
+                        </div>
+                        <div class="col-md-3 client-box10">
+
+                        </div>
+                        <div class="col-md-3 client-box11">
+
+                        </div>
+                        <div class="col-md-3 client-box12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Client section ends -->
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+
+    </script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+<?php include "footer.php" ?>
+</html>

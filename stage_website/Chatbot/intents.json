@@ -1,0 +1,224 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "okay",
+        "ok",
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "internship Availability",
+      "patterns": [
+        "Is there any vacant seat for internship?",
+        "Is there any internship Available?",
+        "Is there any internship Available for freshers?"
+      ],
+      "responses": [
+        "Yes All types of internship available"
+      ]
+    },
+    {
+      "tag": "field of interest",
+      "patterns": [
+        "Is there any internship Available for Android?",
+        "Is there any internship Available for C/C++?",
+        "Is there any internship Available for java?",
+        "Is there any internship Available for Angular JS?",
+        "Is there any internship Available for Advanced excel?",
+        "Is there any internship Available for ASP .Net?",
+        "Is there any internship Available for Data Analysis?",
+        "Is there any internship Available for Digital Marketing?",
+        "Is there any internship Available for Embeded System?",
+        "Is there any internship Available for GIS?",
+        "Is there any internship Available for Networking?",
+        "Is there any internship Available for Node JS?",
+        "Is there any internship Available for Python?",
+        "Is there any internship Available for React JS?",
+        "Is there any internship Available for AI/ML?",
+        "Is there any internship Available for Data Science?",
+        "Is there any internship Available for PHP?",
+        "Is there any internship Available for UI/UX?",
+        "Is there any internship Available for Web Devlopement?",
+        "Is there any internship Available for  Business Inteligence?",
+        "Is there any internship Available for Testing and QA?",
+        "Is there any internship Available for Distributed Systems?",
+        "Is there any internship Available for Full Stack Developement?"
+      ],
+      "responses": [
+        "Yes, Internship Available for given field"
+      ]
+    },
+    {
+      "tag": "Timing",
+      "patterns": [
+        "What is the timing for an internship?",
+        "timing"
+
+      ],
+      "responses": [
+        "The timing for an internship from 9:30 to 6:30"
+      ]
+    },
+    {
+      "tag": "paid/unpaid",
+      "patterns": [
+        "Is this Intership paid or unpaid?",
+        "Is there any charges for Internship?"
+      ],
+      "responses": [
+        "No Internships are Unpaid ",
+        "Interships are free of cost",
+        "There will be no charge for Internship"
+      ]
+    },
+    {
+      "tag": "Stipend",
+      "patterns": [
+        "Are stipend providing by Company?",
+        "Do You provide stipend?",
+        "Is there any stipend for freshers?"
+      ],
+      "responses": [
+        "We will evaluate your performance and based on that we will provide stipend."
+      ]
+    },
+    {
+      "tag": "Placement",
+      "patterns": [
+        "Does company provide placement after an internship?",
+        "Are placement opportunities provided by company?"
+      ],
+      "responses": [
+        "Yes we will provide placement based on your performance."
+      ]
+    },
+    {
+      "tag": "Appointment",
+      "patterns": [
+        "How can I take Appointment?",
+        "How can I book Appointment?"
+      ],
+      "responses": [
+        "You can book your appointment by contact on 9824347721 or by email us on contactus@orena.solutions."
+      ]
+    },
+    {
+      "tag": "Contact us ",
+      "patterns": [
+        "How can I contact you?"
+      ],
+      "responses": [
+        "You can contact us by contact on 9824347721 or by email us on contactus@orena.solutions."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where is your company situated",
+        "where is the location of the company."
+        
+      ],
+      "responses": [
+        "Orena Solution, 4th floor,urban one complex, Vasna - Bhayli Main Rd, near panchmukhi hanuman, Vadodara, Gujarat 390012."
+      ]
+    },
+    {
+      "tag": "HR Training",
+      "patterns": [
+        "Is there any training avilable for HR?",
+        "Do you provide training for HR?"
+      ],
+      "responses": [
+        "Yes we are providing training for HR."
+      ]
+    },
+    {
+      "tag": "HR Recruitment",
+      "patterns": [
+        "Is there any recruitment for HR?",
+        "Are you recruiting HR?"
+      ],
+      "responses": [
+        "Yes, Recruitment for HR is available."
+      ]
+    },
+    {
+      "tag": "Document",
+      "patterns": [
+        "Which documents are needed to apply for HR?"
+      ],
+      "responses": [
+        "You need to send your CV.", 
+        "You need to mail your documents on contactus@orena.solutions"
+      ]
+    },
+
+    {
+      "tag": "Qualification",
+      "patterns": [
+        "On Which basis or qualification your company hiring HR."
+      ],
+      "responses": [
+        "We are assesing your past experience and based on education backgroud and based on following we are hiring."
+      ]
+    },
+    
+    {
+      "tag": "placement availability",
+      "patterns": [
+        "Is student avaliable for placement"  
+      ],
+      "responses": [
+        "yes students are available for placement" 
+      ]
+    },
+    {
+      "tag": "Technology",
+      "patterns": [
+        "In which technology or field are you providing placement?"
+      ],
+      "responses": [
+        "We are providing placements in following list of technology or fields. Android,  java, Angular/Node/React JS, ASP .Net, Data Analysis, Digital Marketing, Embeded System, GIS, Networking, AI/ML/Data Science, PHP, UI/UX, Web Devlopement, Business Inteligence, Testing and QA, Full Stack Developement and many more."
+      ]
+    }
+  ]
+}
